@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/boot.css">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="w3-panel" style="color: rgb(34,156,215)"><span class="w3-xxlarge">pay</span>roll</h2>
+    </div>
+
+    <hr class="mt-4">
+
+    <div class="container">
+        <h1>NET PAY CALCULATOR</h1>
+        <p>Enter the gross salary below to calculate netpay</p>
+
+        <div class="w3-card-4 mt-5">
+            <form id="myForm" class="w3-center w3-padding-16">
+                <label class="w3-large">Basic salary:</label>
+                <input type="number" name="Kes" id="basic_salary" placeholder="kes">
+                <label class="w3-large">Benefits: </label>
+                <input type="number" name="kes" id="benefits" placeholder="Kes">
+                <input type="submit" value="calculate" id="datatable">
+            </form>
+
+            <hr>
+
+            <table style="width: 100%;" id="datatable">
+                <tr class="w3-large">
+                    <th>Description</th>
+                    <th style="text-align: right;">Result</th>
+                </tr>
+                <tr>
+                    <th>Gross salary</th>
+                    <td id="gross_salary"></td>
+                </tr>
+                <tr>
+                    <th>
+                <tr style="border: none;">
+                    <th>NSSF</th>
+                    <td id="NSSF"></td>
+                </tr>
+                <tr style="border: none;">
+                    <th>NHDF</th>
+                    <td id="NHDF"></td>
+                </tr>
+                </th>
+
+                </tr>
+                <tr>
+                    <th>Final Payee</th>
+                    <td id="payee"></td>
+                </tr>
+                <tr>
+                    <th>NHIF</th>
+                    <td id="nhif"></td>
+                </tr>
+                <tr>
+                    <th>Net pay</th>
+                    <td id="net_pay"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
